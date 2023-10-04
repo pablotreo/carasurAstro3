@@ -1,0 +1,94 @@
+---
+import { Image } from 'astro:assets';
+import home1 from '../../assets/home/Home01.jpg';
+import home3 from '../../assets/home/Home03.jpg';
+import home4 from '../../assets/home/Home04.jpg';
+import home5 from '../../assets/home/Home05.jpg';
+
+const features = [
+  {
+    titulo: 'LUGAR',
+    descripcion: '',
+    picture: 'home3',
+    leyenda: '',
+    href: '/',
+  },
+  {
+    titulo: 'LUGAR',
+    descripcion: '',
+    picture: {home3},
+    leyenda: '',
+    href: '/',
+  },
+  {
+    titulo: 'LUGAR',
+    descripcion: '',
+    picture: {home3},
+    leyenda: '',
+    href: '/',
+  },
+];
+
+---
+
+
+<section class="text-white bg-[#9b8d8f]">
+
+    <div class="flex flex-wrap">
+      <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
+        <Image 
+          class="object-cover object-center" 
+          alt="feature" 
+          src={home3}
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div class="lg:w-2/5">
+        <div class="flex flex-col items-end p-10 lg:pt-40">
+          <h2 class="w-fit text-botones text-xl ring-offset-2 ring-offset-botones ring-1 ring-current font-medium mb-3 px-2 py-1">LUGAR</h2>
+          <p class="lg:mt-20 text-2xl text-justify md:leading-relaxed">La montaña es parte de nuestro cotidiano; marca los tiempos de nuestros días y de este pueblo. Su presencia, sus condiciones extremas, imprimen un carácter genuino a las personas, a las viñas, a los vinos.</p>
+      </div>
+    </div>
+
+
+    <div class="flex flex-wrap bg-[#6c5a5e]">
+      
+      <div class="lg:w-2/5 order-last md:order-first">
+        <div class="flex flex-col p-10 lg:pt-40">
+          <h2 class="w-fit text-botones text-2xl ring-offset-2 ring-offset-botones ring-1 ring-current font-medium mb-3 px-2 py-1">PATRIMONIO</h2>
+            <p class="lg:mt-20 text-2xl text-justify md:leading-relaxed">La viticultura en lugares aislados y desérticos como el nuestro está muy enlazada a las personas: si estas viñas de casi 100 años subsisten, es porque hubo familias que las mantuvieron vivas. En Cara Sur trabajamos para dar continuidad a ese cuidado y recuperar viejos parrales de gran valor patrimonial, que entremezclan variedades antiguas y criollas, respetando los tiempos y maneras de su naturaleza.</p>
+        </div>
+      </div>
+      <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
+        <Image 
+          class="object-cover object-center" 
+          alt="feature" 
+          src={home4}
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-wrap bg-[#9b8d8f]">
+      <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
+        <Image 
+          class="object-cover object-center" 
+          alt="feature" 
+          src={home5}
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+      <div class="lg:w-2/5">
+        <div class="flex flex-col p-10 lg:pt-40">
+          <h2 class="w-fit text-botones text-2xl ring-offset-2 ring-offset-botones ring-1 ring-current font-medium px-2 py-1">VINOS</h2>
+            <p class="lg:mt-20 text-2xl text-justify md:leading-relaxed">Es nuestro propósito darle continuidad a esa historia, dando nuestra mirada hacia un lugar genuino al cual queremos poner en valor, cosechando sus uvas y haciéndolas vino. Buscamos pureza y precisión en esa interpretación, por eso vinificamos en vasijas hormigón, con levaduras locales, estabilizando los vinos con el frío de nuestros inviernos.
+            </p>
+        </div>
+      </div>
+    </div>
+
+ 
+</section>

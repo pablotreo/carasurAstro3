@@ -1,28 +1,16 @@
 ---
-import { Image } from 'astro:assets';
-import somos from '../assets/background.jpg';
----
-<!-- <section class="">
-    <div class="mx-auto">
-        <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-            <Image class="w-full h-50 object-cover object-center block opacity-90 absolute inset-0" src={somos} alt="Somos cultores de la tierra y el vino" />
-            <div class="text-center relative z-10 w-full">
-                <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-                <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
-            </div>
-        </div>
-    </div>
-</section> -->
 
-<section class="bg-[url('/background.jpg')] bg-cover bg-top bg-no-repeat">
+---
+
+<section class="bg-[url('/Home01.jpg')] bg-cover bg-top bg-no-repeat h-80 lg:h-[800px]">
   <div class="p-8 md:p-8 lg:px-16 lg:py-24">
     <div class="text-center sm:text-right">
-      <p class=" text-white/90 md:mt-60 md:block md:text-2xl md:leading-relaxed">
-        Somos cultores de la tierra y el vino.<br /> 
-        Amamos la montaña, nuestro lugar.<br />
-        Hacemos lo que amamos.<br />
-        Lo llamamos Cara Sur.
-      </p>
+      <h1 class="font-serif text-white text-2xl md:mt-60 md:block md:text-3xl md:leading-relaxed">
+        Somos cultores de la <span class="md:text-4xl">tierra</span> y el <span class="md:text-4xl">vino</span>.<br /> 
+        Amamos la <span class="md:text-4xl">montaña</span>, nuestro lugar.<br />
+        Hacemos lo que <span class="md:text-4xl">amamos</span>.<br />
+        Lo llamamos <span class="md:text-4xl">Cara Sur</span>.
+      </h1>
     </div>
   </div>
 </section>
