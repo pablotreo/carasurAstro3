@@ -9,7 +9,11 @@ module.exports = {
 		extend: {
 			colors: {
 				fondo: '#ece8e4',
-				botones: '#3f2b2f',
+				principal: '#3f2b2f',
+				secundario: '#6c5a5d',
+				fondo2: '#9b8d8f',
+				titulos: '#d8d1ca'
+		
 			}
 		}
 	},

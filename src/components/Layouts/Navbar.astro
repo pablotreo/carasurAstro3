@@ -31,7 +31,7 @@ const links = [
     <a href="https://carasurbarreal.com.ar/" class="flex items-center">
         <img src="/logoheader.png" class="h-11 mr-3" alt="Cara Sur Logo"/>
     </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-botones md:hidden hover:bg-fondo focus:outline-none focus:ring-2 focus:ring-gray-20" aria-controls="navbar-default" aria-expanded="false">
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-principal md:hidden hover:bg-fondo focus:outline-none focus:ring-2 focus:ring-gray-20" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Abrir menu principal</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -42,7 +42,7 @@ const links = [
         {
           links.map((link) => (
             <li>
-              <a href={link.href} class="block py-2 pl-3 pr-4 text-botones bg-fondo md:bg-fondo md:text-botones md:p-0 hover:ring-offset-4 ring-offset-fondo hover:ring-2 ring-current" aria-current="page">{link.name}</a>
+              <a href={link.href} class="block py-2 pl-3 pr-4 text-principal bg-fondo md:bg-fondo md:text-principal md:p-0 hover:ring-offset-4 ring-offset-fondo hover:ring-2 ring-current" aria-current="page">{link.name}</a>
             </li>
             ))
         }

@@ -19,6 +19,7 @@ const { title, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
@@ -28,6 +29,13 @@ const { title, description } = Astro.props;
     	<slot />
     <Footer />
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>	
+		<script is:inline type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script is:inline type="text/javascript">
+			AOS.init({
+				duration: 1200,
+				once: true,
+			});
+		</script>
 	</body>
 </html>
 

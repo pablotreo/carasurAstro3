@@ -32,39 +32,45 @@ const features = [
 ---
 
 
-<section class="text-white bg-[#9b8d8f]">
+<section class="text-white ">
 
-    <div class="flex flex-wrap relative">
-      <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
-        <Image 
-          class="object-cover object-center" 
-          alt="feature" 
-          src={home3}
-          decoding="async"
-          loading="lazy"
-        />
-        <div class="absolute bottom-0 px-4 py-3">
-          <h1 class="text-white font-semibold text-4xl"> Kittens are cute </h1>
-         
-        </div>
+  <div class="flex flex-wrap relative bg-[#9b8d8f]">
+    <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
+      <div class="absolute top-1/3 lg:top-3/4 lg:left-1/2"
+      data-aos="fade-right"
+      data-aos-offset="100">
+        <h1 class="text-titulos text-4xl lg:text-5xl font-serif ps-4 lg:ps-0"> Vinos de montaña</h1>
       </div>
-      <div class="lg:w-2/5">
-        <div class="flex flex-col items-end p-10 lg:pt-40">
-          <h2 class="w-fit text-[#6c5a5d] text-xl ring-offset-2 ring-offset-[#6c5a5d] ring-1 ring-current font-medium mb-3 px-2 py-1">LUGAR</h2>
-          <p class="lg:mt-20 text-2xl text-justify md:leading-relaxed">La montaña es parte de nuestro cotidiano; marca los tiempos de nuestros días y de este pueblo. Su presencia, sus condiciones extremas, imprimen un carácter genuino a las personas, a las viñas, a los vinos.</p>
+      <Image 
+        class="object-cover object-center" 
+        alt="feature" 
+        src={home3}
+        decoding="async"
+        loading="lazy"
+      />
+    </div>
+    <div class="lg:w-2/5">
+      <div class="flex flex-col items-end p-8 lg:pt-40 mb-6">
+        <h2 class="w-fit text-[#6c5a5d] text-xl ring-offset-2 ring-offset-[#6c5a5d] ring-1 ring-current font-medium px-2 py-1">LUGAR</h2>
+        <p class="mt-12 lg:mt-20 text-2xl text-justify md:leading-relaxed">La montaña es parte de nuestro cotidiano; marca los tiempos de nuestros días y de este pueblo. Su presencia, sus condiciones extremas, imprimen un carácter genuino a las personas, a las viñas, a los vinos.</p>
       </div>
     </div>
+  </div>
 
-
-    <div class="flex flex-wrap bg-[#6c5a5e]">
+    <div class="flex flex-wrap relative bg-[#6c5a5e]">
       
       <div class="lg:w-2/5 order-last md:order-first">
-        <div class="flex flex-col p-10 lg:pt-40">
+        <div class="flex flex-col p-8 lg:pt-40 mb-6">
           <h2 class="w-fit text-[#3f2b2f] text-2xl ring-offset-2 ring-offset-[#3f2b2f] ring-1 ring-current font-medium mb-3 px-2 py-1">PATRIMONIO</h2>
-            <p class="lg:mt-20 text-2xl text-justify md:leading-relaxed">La viticultura en lugares aislados y desérticos como el nuestro está muy enlazada a las personas: si estas viñas de casi 100 años subsisten, es porque hubo familias que las mantuvieron vivas. En Cara Sur trabajamos para dar continuidad a ese cuidado y recuperar viejos parrales de gran valor patrimonial, que entremezclan variedades antiguas y criollas, respetando los tiempos y maneras de su naturaleza.</p>
+            <p class="mt-12 lg:mt-20 text-2xl text-justify md:leading-relaxed">La viticultura en lugares aislados y desérticos como el nuestro está muy enlazada a las personas: si estas viñas de casi 100 años subsisten, es porque hubo familias que las mantuvieron vivas. En Cara Sur trabajamos para dar continuidad a ese cuidado y recuperar viejos parrales de gran valor patrimonial, que entremezclan variedades antiguas y criollas, respetando los tiempos y maneras de su naturaleza.</p>
         </div>
       </div>
       <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
+        <div class="absolute top-1/4 lg:top-3/4 lg:right-1/3"
+          data-aos="fade-left"
+          data-aos-offset="100">
+          <h1 class="text-titulos text-4xl lg:text-5xl font-serif ps-4 lg:ps-0">Viñas y variedades ancestrales</h1>
+        </div>
         <Image 
           class="object-cover object-center" 
           alt="feature" 
@@ -75,8 +81,13 @@ const features = [
       </div>
     </div>
 
-    <div class="flex flex-wrap bg-[#9b8d8f]">
+    <div class="flex flex-wrap relative bg-[#9b8d8f]">
       <div class="lg:w-3/5 mb-12 sm:mb-0 w-full">
+        <div class="absolute top-1/4 lg:top-3/4 lg:left-1/3"
+          data-aos="fade-right"
+          data-aos-offset="100">
+          <h1 class="text-titulos text-4xl lg:text-5xl font-serif ps-4 lg:ps-0">Puesta en valor de un valle y su historia</h1>
+        </div>
         <Image 
           class="object-cover object-center" 
           alt="Vinos Cara Sur" 
@@ -86,9 +97,9 @@ const features = [
         />
       </div>
       <div class="lg:w-2/5">
-        <div class="flex flex-col items-end p-10 lg:pt-40">
+        <div class="flex flex-col items-end p-8 lg:pt-40 mb-6">
           <h2 class="w-fit text-[#6c5a5d] text-2xl ring-offset-2 ring-offset-[#6c5a5d] ring-1 ring-current font-medium px-2 py-1">VINOS</h2>
-            <p class="lg:mt-20 text-2xl text-justify md:leading-relaxed">Es nuestro propósito darle continuidad a esa historia, dando nuestra mirada hacia un lugar genuino al cual queremos poner en valor, cosechando sus uvas y haciéndolas vino. Buscamos pureza y precisión en esa interpretación, por eso vinificamos en vasijas hormigón, con levaduras locales, estabilizando los vinos con el frío de nuestros inviernos.
+            <p class="mt-12 lg:mt-20 text-2xl text-justify md:leading-relaxed">Es nuestro propósito darle continuidad a esa historia, dando nuestra mirada hacia un lugar genuino al cual queremos poner en valor, cosechando sus uvas y haciéndolas vino. Buscamos pureza y precisión en esa interpretación, por eso vinificamos en vasijas hormigón, con levaduras locales, estabilizando los vinos con el frío de nuestros inviernos.
             </p>
         </div>
       </div>
